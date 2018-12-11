@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace AppCenterDemoAndroid
 {
@@ -15,6 +18,8 @@ namespace AppCenterDemoAndroid
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+
+            AppCenter.Start("88d2c395-566e-46e1-a5ef-a8ce69e2c7f2", typeof(Analytics), typeof(Crashes));
 
             // Get our button from the layout resource,
             // and attach an event to it
