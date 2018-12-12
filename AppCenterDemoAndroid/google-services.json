@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "466810089994",
+    "firebase_url": "https://app-center-demo-app.firebaseio.com",
+    "project_id": "app-center-demo-app",
+    "storage_bucket": "app-center-demo-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466810089994:android:776b3357d3016f83",
+        "android_client_info": {
+          "package_name": "microsoft.brazil.App_Center_Android_Demo_App"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466810089994-5749uonj55ibtvg3fq67gv440poj0vl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhVJHL_hrhF9TtH7V-D-PjAI8t8TmwVSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
