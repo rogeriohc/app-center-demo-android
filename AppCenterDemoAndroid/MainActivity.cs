@@ -45,9 +45,12 @@ namespace AppCenterDemoAndroid
                         }
                     }
 
+                    TextView text = FindViewById<TextView>(Resource.Id.textPush);
+                    text.Text = summary;
+
                     // Send the notification summary to debug output
-                    
                     System.Diagnostics.Debug.WriteLine(summary);
+
                 };
             }
 
