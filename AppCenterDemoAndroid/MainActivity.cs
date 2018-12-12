@@ -5,7 +5,8 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Push;
-
+using System;
+using System.Collections.Generic;
 
 namespace AppCenterDemoAndroid
 {
@@ -59,8 +60,20 @@ namespace AppCenterDemoAndroid
             // Get our button from the layout resource,
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.myButton);
+            button.Click += delegate { button.Text = $"{count++} clicks!"; Analytics.TrackEvent($"{count++} clicks!"); };
 
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+            Button buttonEvent = FindViewById<Button>(Resource.Id.buttonEvent);
+            buttonEvent.Click += delegate { Analytics.TrackEvent("buttonEvent acionado!"); };
+
+            Button buttonGenerateTestCrash = FindViewById<Button>(Resource.Id.buttonGenerateTestCrash);
+            buttonGenerateTestCrash.Click += delegate { Crashes.GenerateTestCrash(); };
+
+
+            Button buttonCrash = FindViewById<Button>(Resource.Id.buttonCrash);
+            Exception exception = new Exception("Crash!");
+            var properties = new Dictionary<string, string> {{ "Category", "Music" },{ "Wifi", "On" }};
+            buttonCrash.Click += delegate { Crashes.TrackError(exception,properties);};
+
         }
     }
 }

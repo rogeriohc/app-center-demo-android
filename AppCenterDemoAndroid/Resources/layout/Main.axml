@@ -9,6 +9,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEvent"
+        android:text="Event" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGenerateTestCrash"
+        android:text="Generare test crash" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCrash"
+        android:text="CRASH" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
