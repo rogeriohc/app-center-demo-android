@@ -68,7 +68,6 @@ namespace AppCenterDemoAndroid
             Button buttonGenerateTestCrash = FindViewById<Button>(Resource.Id.buttonGenerateTestCrash);
             buttonGenerateTestCrash.Click += delegate { Crashes.GenerateTestCrash(); };
 
-
             Button buttonCrash = FindViewById<Button>(Resource.Id.buttonCrash);
             Exception exception = new Exception("Crash!");
             var properties = new Dictionary<string, string> {{ "Category", "Music" },{ "Wifi", "On" }};
