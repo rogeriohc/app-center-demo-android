@@ -73,6 +73,8 @@ namespace AppCenterDemoAndroid
             var properties = new Dictionary<string, string> {{ "Category", "Music" },{ "Wifi", "On" }};
             buttonCrash.Click += delegate { Crashes.TrackError(exception,properties);};
 
+            
+
         }
     }
 }
