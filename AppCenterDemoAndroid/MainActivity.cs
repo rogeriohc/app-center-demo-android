@@ -15,6 +15,7 @@ namespace AppCenterDemoAndroid
     {
         int count = 1;
 //teste bradesco
+// teste up
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
